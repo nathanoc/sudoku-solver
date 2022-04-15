@@ -8,6 +8,9 @@ def inputGrid():
     return linearGrid
 
 def outputGrid(linearGrid):
+    if not linearGrid:
+        return
+        
     for row in range(9):
         lineOutput = ""
         for square in range(9):

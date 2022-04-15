@@ -48,12 +48,17 @@ def getPossibilities(linearGrid):
 
 
 def solveGrid(linearGrid):
+    iterations = 0
     while not isSolved(linearGrid):
         allPossibilities = getPossibilities(linearGrid)
         for squareIndex in range(81):
             squarePossibilities = allPossibilities[squareIndex]
             if len(squarePossibilities) == 1:
                 linearGrid[squareIndex] = squarePossibilities[0]    # fill in the empty square with its value
+        iterations += 1
+        if iterations > 10000: # this number is arbitrary
+            print("Unsolvable by this algorithm")
+            return
         
     print("Solved")
     return linearGrid
