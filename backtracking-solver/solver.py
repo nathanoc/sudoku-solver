@@ -88,7 +88,7 @@ while linearGrid.count(0) != 0:
     
     iterations += 1
     if iterations % 1000 == 0:
-        print(str(iterations) + "\tSquares filled: " + str(boardIndex))
+        print(str(iterations) + " \titerations")
 
 # output the grid
 
