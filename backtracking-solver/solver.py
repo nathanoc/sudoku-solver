@@ -75,10 +75,10 @@ iterations = 0
 while linearGrid.count(0) != 0:
     boardIndex = empties[emptiesIndex]
 
-    while (linearGrid[boardIndex] == 0 or checkValid() == False) and linearGrid[boardIndex] <= 9:
+    while (linearGrid[boardIndex] == 0 or checkValid() == False) and linearGrid[boardIndex] <= puzzleWidth:
         linearGrid[boardIndex] += 1
 
-    if linearGrid[boardIndex] > 9:
+    if linearGrid[boardIndex] > puzzleWidth:
         linearGrid[boardIndex] = 0
         emptiesIndex -= 1
         boardIndex = empties[emptiesIndex]
