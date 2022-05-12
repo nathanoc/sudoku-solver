@@ -7,7 +7,7 @@ This is a sudoku solver (two sudoku solvers, actually) that I put together over 
 ### Algorithm Summary
 The program repeatedly loops through every box in the grid, making a list of all the possible numbers that could go in each square. If there is only one possible number for a square, it fills that square in. It repeats until either the board is filled or it reaches a hard-coded iteration limit.
 ### Code
-The code is divided across five files, which turned out to be massively unnecessary. These are [gridManipulation.py](bad-solver/gridManipulation.py), [inputoutput.py](bad-solver/inputoutput.py), [main.py](bad-solver/main.py), [solver.py](bad-solver/solver.py), and [validity.py](bad-solver/validity.py).
+The code is divided across five files, which turned out to be massively excessive. These are [gridManipulation.py](bad-solver/gridManipulation.py), [inputoutput.py](bad-solver/inputoutput.py), [main.py](bad-solver/main.py), [solver.py](bad-solver/solver.py), and [validity.py](bad-solver/validity.py).
 
 ## Backtracking Solver
 ### Algorithm Summary
